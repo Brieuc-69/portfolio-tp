@@ -55,3 +55,5 @@ header.classList.toggle("sticky", window.scrolly > 100);
 
 menuIcon.classList.remove("bx-x");
 navbar.classList.remove("active");
+
+const contact = document.getElementById('contact')
