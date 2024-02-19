@@ -8,7 +8,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins; sans-serif';
+    font-family: Poppins;
 }
 
 :root {
@@ -20,7 +20,7 @@
 }
 
 html {
-    font-size: 62,5%;
+    font-size: 60,5%;
     overflow-x: hidden;
 
 }
@@ -31,8 +31,9 @@ body {
 }
 
 section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    /* min-height: 100vh; */
+    /* padding: 10rem 9% 2rem; */
+    padding: 10%;
 }
 
 /* Google Fonts */
@@ -329,15 +330,17 @@ span {
 
     .skills-logo {
     display: flex;
+   
+    flex-wrap: wrap;
     justify-content: space-around;
    
 }
 
 .skills-logo img {
-    width: 200px;
+    width: 100px;
     display: flex;
     justify-content: center;
-    /* flex-direction: column; */
+    
 }
 
 
@@ -434,15 +437,17 @@ span {
     html {
         font-size: 55%;
     }
+
+   
 }
 
 
-@media (max-widht: 991px) {
+@media (max-width: 991px) {
     .header {
          padding: 2rem 3%;
     }
 
-    section {
+    .home {
         padding: 10rem 3% 2rem;
     }
 
@@ -458,6 +463,7 @@ span {
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
+        font-size: 30px;
     }
 
     .navbar {
@@ -465,7 +471,7 @@ span {
         top: 100%;
         left: 0;
         width: 100%;
-        padding: 1rem 3;
+        padding: 1rem 5%;
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
@@ -546,20 +552,33 @@ span {
     .portfolio-container {
         grid-template-columns: 1fr;
     }
-}
 
-@media (max-width: 450px) {
+    .skills-logo {
+        flex-direction: column;
+    }
 
-    html {
-        font-size: 50%;
-    } 
-
-    .contact from .input-box input {
-        width: 100%;
+    .skills-logo img {
+        margin-top: 10px;
     }
 }
 
-@media (max-width: 365px) {
+@media (max-width: 35em) {
+    
+        html {
+            font-size: 50%;
+        } 
+    
+        .contact from .input-box input {
+            width: 100%;
+        }
+    
+        .skills-logo {
+            flex-direction: column;
+        }
+    
+        .skills-logo img {
+            margin-top: 10px;
+        }
     .home-img img {
         width: 90vw;
     }
@@ -582,19 +601,15 @@ span {
         display: flex;
         justify-content: center;
         flex-direction: column;
-    }
-
-    .services-container .skills-logo {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
         align-items:center; 
         justify-content: center;
         grid-template-columns: repeat(1 1fr);
+  } 
+   
    
         
     }
 
-}
+
     
 
